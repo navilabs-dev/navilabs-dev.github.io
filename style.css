@@ -29,6 +29,7 @@ header { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
   width: 44px; height: 44px; border-radius: 12px;
   background: linear-gradient(135deg, var(--accent1), var(--accent2));
 }
+img.logo { display: block; background: none; }
 .brand { font-size: 22px; font-weight: 700; }
 .brand a { color: var(--text); text-decoration: none; }
 .brand .by { font-size: 14px; font-weight: 400; color: var(--text3); }
@@ -37,6 +38,7 @@ header { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
 .apps { list-style: none; padding: 0; }
 .apps li { margin: 12px 0; }
 .apps a { font-weight: 600; }
+.app-icon { width: 24px; height: 24px; border-radius: 6px; vertical-align: -6px; margin-right: 4px; }
 
 h1 { font-size: 28px; line-height: 1.25; margin: 0 0 12px; }
 h2 { font-size: 20px; margin: 32px 0 8px; color: var(--accent-text); }

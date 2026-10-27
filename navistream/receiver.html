@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <title>NaviStream</title>
+  <!-- Récepteur Google Cast de NaviStream (application D8BAF43E de la console
+       Google Cast) : ouvert par les Chromecast / TV qui n'ont pas l'app
+       NaviStream (sinon Cast Connect lance l'app). Lecteur standard de Google
+       (Cast Application Framework) aux couleurs de l'app. -->
+  <script src="https://www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
+  <style>
+    html, body { margin: 0; height: 100%; background: #0A0A0F; overflow: hidden; }
+    cast-media-player {
+      --theme-hue: 265;
+      --progress-color: #7733FD;
+      --splash-image: url("icon.png");
+      --splash-size: 160px;
+      --logo-image: url("icon.png");
+      --logo-size: 120px;
+    }
+  </style>
+</head>
+<body>
+  <cast-media-player></cast-media-player>
+  <script>
+    cast.framework.CastReceiverContext.getInstance().start();
+  </script>
+</body>
+</html>
